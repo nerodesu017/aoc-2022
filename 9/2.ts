@@ -1,6 +1,6 @@
 import * as fs from "fs";
 
-const file = fs.readFileSync("./test1.txt", { encoding: "utf-8" });
+const file = fs.readFileSync("./input.txt", { encoding: "utf-8" });
 
 const lines = file.split(/\r?\n/gm);
 

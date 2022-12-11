@@ -3,7 +3,7 @@ import * as util from "util";
 
 console.debug = () => {};
 
-const file = fs.readFileSync("./test.txt", { encoding: "utf-8" });
+const file = fs.readFileSync("./input.txt", { encoding: "utf-8" });
 
 const monkeysStrings = file.split(/\r?\n\r?\n/gm);
 
