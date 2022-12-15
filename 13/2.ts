@@ -5,7 +5,7 @@ console.debug = () => { };
 
 const file = fs.readFileSync("./input.txt", { encoding: "utf-8" }) + "\n\n[[2]]\n[[6]]";
 
-const doubleLines = file.split(/\r?\n/gm);
+const lines = file.split(/\r?\n/gm);
 
 let product = 1;
 
@@ -145,7 +145,7 @@ function compare(l1: List, l2: List, depth: number = 0): boolean | null {
 
 let packets: List[] = [];
 
-doubleLines.forEach(line => {
+lines.forEach(line => {
   line.startsWith("[") ? packets.push(parse(line)) : null;
 })
 
